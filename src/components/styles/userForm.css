@@ -1,0 +1,92 @@
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.271);
+    position: fixed;
+    top: 0;
+    transform: scale(0);
+    
+}
+
+
+.background.act{
+    transform: scale(1);
+    transition: transform .5s;
+    
+}
+
+
+.userform{
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform .5s;
+    
+}
+
+.userform.active{
+    transform: scale(1);
+    transition: transform .5s
+   
+}
+
+.userform__form{
+    background-color: white;
+    min-width: 40%;
+    height: 80vh;
+    padding: 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    border: solid 4px rgb(19, 124, 169, 0.64);
+   
+    
+}
+
+
+
+.userform__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.userform__close{
+    padding: 0 5px;
+    border: none;
+    background-color: inherit; 
+}
+
+.userform__close:hover{
+    color: blue;
+}
+
+.userform__item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.userform__btn{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(19, 124, 169);
+    color: wheat;
+    border: none;
+    transition: transform .5s,
+                filter .5s
+}
+
+.userform__btn:hover{
+    transform: scale(1.05);
+    filter: brightness(1.25);
+    transition: transform .5s,
+                filter .5s
+}

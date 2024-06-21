@@ -1,0 +1,56 @@
+/* ----Reset---- */
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+input,
+button{
+  display: inline-block;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+}
+
+input{
+  padding: 8px 5px ;
+  color: rgb(19, 124, 169);;
+  border: 1px solid rgb(19, 124, 169);;
+}
+
+/* ----App---- */
+
+.app-container{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: space-evenly;
+}
+
+.app__header{
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app__header__btn{
+  padding: 2px 25px ;
+  background-color: rgb(19, 124, 169);
+  color: white;
+  border: none;
+}
+
+.app__header__btn span{
+  font-size: 17px;
+  margin-right: 4px;
+}
